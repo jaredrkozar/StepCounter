@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0207566028B43D2000F603A7 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0207565F28B43D2000F603A7 /* Ring.swift */; };
+		023049C028B4128A00D94130 /* StepCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023049BF28B4128A00D94130 /* StepCounterApp.swift */; };
+		023049C228B4128A00D94130 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023049C128B4128A00D94130 /* ContentView.swift */; };
+		023049C428B4128B00D94130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023049C328B4128B00D94130 /* Assets.xcassets */; };
+		023049C728B4128B00D94130 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023049C628B4128B00D94130 /* Preview Assets.xcassets */; };
+		023049D128B4128C00D94130 /* StepCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023049D028B4128C00D94130 /* StepCounterTests.swift */; };
+		023049DB28B4128C00D94130 /* StepCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023049DA28B4128C00D94130 /* StepCounterUITests.swift */; };
+		023049DD28B4128C00D94130 /* StepCounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023049DC28B4128C00D94130 /* StepCounterUITestsLaunchTests.swift */; };
+		0285F0FD29043C290044070C /* HealthKitInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285F0FC29043C290044070C /* HealthKitInteractor.swift */; };
+		0285F1062905D9470044070C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285F1052905D9470044070C /* MainView.swift */; };
+		0285F10A2905D99A0044070C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285F1092905D99A0044070C /* SettingsView.swift */; };
+		0285F10C2909AE490044070C /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285F10B2909AE490044070C /* StatisticsView.swift */; };
+		0285F10E2909C2780044070C /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285F10D2909C2780044070C /* WelcomeScreen.swift */; };
+		0285F1102909C3330044070C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285F10F2909C3330044070C /* CustomButton.swift */; };
+		0285F112290AFB3E0044070C /* ChartCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285F111290AFB3E0044070C /* ChartCreator.swift */; };
+		0285F114290C8C8C0044070C /* HealthStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285F113290C8C8C0044070C /* HealthStat.swift */; };
+		0285F116290CF19C0044070C /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285F115290CF19C0044070C /* SettingsRowView.swift */; };
+		0285F118290F97C30044070C /* TintPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285F117290F97C30044070C /* TintPickerView.swift */; };
+		0285F11B290FB3750044070C /* SharedSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285F11A290FB3750044070C /* SharedSettings.swift */; };
+		0285F11D29102A600044070C /* SetGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285F11C29102A600044070C /* SetGoalView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		023049CD28B4128C00D94130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 023049B428B4128A00D94130 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 023049BB28B4128A00D94130;
+			remoteInfo = StepCounter;
+		};
+		023049D728B4128C00D94130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 023049B428B4128A00D94130 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 023049BB28B4128A00D94130;
+			remoteInfo = StepCounter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0207565F28B43D2000F603A7 /* Ring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		023049BC28B4128A00D94130 /* StepCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		023049BF28B4128A00D94130 /* StepCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterApp.swift; sourceTree = "<group>"; };
+		023049C128B4128A00D94130 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		023049C328B4128B00D94130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		023049C628B4128B00D94130 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		023049CC28B4128C00D94130 /* StepCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		023049D028B4128C00D94130 /* StepCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterTests.swift; sourceTree = "<group>"; };
+		023049D628B4128C00D94130 /* StepCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		023049DA28B4128C00D94130 /* StepCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterUITests.swift; sourceTree = "<group>"; };
+		023049DC28B4128C00D94130 /* StepCounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0285F0FC29043C290044070C /* HealthKitInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitInteractor.swift; sourceTree = "<group>"; };
+		0285F0FE2904E0560044070C /* StepCounter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StepCounter.entitlements; sourceTree = "<group>"; };
+		0285F1052905D9470044070C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0285F1092905D99A0044070C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0285F10B2909AE490044070C /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		0285F10D2909C2780044070C /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		0285F10F2909C3330044070C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		0285F111290AFB3E0044070C /* ChartCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCreator.swift; sourceTree = "<group>"; };
+		0285F113290C8C8C0044070C /* HealthStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStat.swift; sourceTree = "<group>"; };
+		0285F115290CF19C0044070C /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		0285F117290F97C30044070C /* TintPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintPickerView.swift; sourceTree = "<group>"; };
+		0285F11A290FB3750044070C /* SharedSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedSettings.swift; sourceTree = "<group>"; };
+		0285F11C29102A600044070C /* SetGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGoalView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		023049B928B4128A00D94130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		023049C928B4128C00D94130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		023049D328B4128C00D94130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		023049B328B4128A00D94130 = {
+			isa = PBXGroup;
+			children = (
+				023049BE28B4128A00D94130 /* StepCounter */,
+				023049CF28B4128C00D94130 /* StepCounterTests */,
+				023049D928B4128C00D94130 /* StepCounterUITests */,
+				023049BD28B4128A00D94130 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		023049BD28B4128A00D94130 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				023049BC28B4128A00D94130 /* StepCounter.app */,
+				023049CC28B4128C00D94130 /* StepCounterTests.xctest */,
+				023049D628B4128C00D94130 /* StepCounterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		023049BE28B4128A00D94130 /* StepCounter */ = {
+			isa = PBXGroup;
+			children = (
+				0285F0FE2904E0560044070C /* StepCounter.entitlements */,
+				0207565F28B43D2000F603A7 /* Ring.swift */,
+				023049BF28B4128A00D94130 /* StepCounterApp.swift */,
+				0285F119290F97CB0044070C /* Settings */,
+				0285F115290CF19C0044070C /* SettingsRowView.swift */,
+				0285F10B2909AE490044070C /* StatisticsView.swift */,
+				023049C128B4128A00D94130 /* ContentView.swift */,
+				0285F0FC29043C290044070C /* HealthKitInteractor.swift */,
+				0285F113290C8C8C0044070C /* HealthStat.swift */,
+				0285F111290AFB3E0044070C /* ChartCreator.swift */,
+				0285F10D2909C2780044070C /* WelcomeScreen.swift */,
+				0285F10F2909C3330044070C /* CustomButton.swift */,
+				0285F1052905D9470044070C /* MainView.swift */,
+				023049C328B4128B00D94130 /* Assets.xcassets */,
+				023049C528B4128B00D94130 /* Preview Content */,
+			);
+			path = StepCounter;
+			sourceTree = "<group>";
+		};
+		023049C528B4128B00D94130 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				023049C628B4128B00D94130 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		023049CF28B4128C00D94130 /* StepCounterTests */ = {
+			isa = PBXGroup;
+			children = (
+				023049D028B4128C00D94130 /* StepCounterTests.swift */,
+			);
+			path = StepCounterTests;
+			sourceTree = "<group>";
+		};
+		023049D928B4128C00D94130 /* StepCounterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				023049DA28B4128C00D94130 /* StepCounterUITests.swift */,
+				023049DC28B4128C00D94130 /* StepCounterUITestsLaunchTests.swift */,
+			);
+			path = StepCounterUITests;
+			sourceTree = "<group>";
+		};
+		0285F119290F97CB0044070C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0285F1092905D99A0044070C /* SettingsView.swift */,
+				0285F11C29102A600044070C /* SetGoalView.swift */,
+				0285F11A290FB3750044070C /* SharedSettings.swift */,
+				0285F117290F97C30044070C /* TintPickerView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		023049BB28B4128A00D94130 /* StepCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 023049E028B4128C00D94130 /* Build configuration list for PBXNativeTarget "StepCounter" */;
+			buildPhases = (
+				023049B828B4128A00D94130 /* Sources */,
+				023049B928B4128A00D94130 /* Frameworks */,
+				023049BA28B4128A00D94130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StepCounter;
+			productName = StepCounter;
+			productReference = 023049BC28B4128A00D94130 /* StepCounter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		023049CB28B4128C00D94130 /* StepCounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 023049E328B4128C00D94130 /* Build configuration list for PBXNativeTarget "StepCounterTests" */;
+			buildPhases = (
+				023049C828B4128C00D94130 /* Sources */,
+				023049C928B4128C00D94130 /* Frameworks */,
+				023049CA28B4128C00D94130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				023049CE28B4128C00D94130 /* PBXTargetDependency */,
+			);
+			name = StepCounterTests;
+			productName = StepCounterTests;
+			productReference = 023049CC28B4128C00D94130 /* StepCounterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		023049D528B4128C00D94130 /* StepCounterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 023049E628B4128C00D94130 /* Build configuration list for PBXNativeTarget "StepCounterUITests" */;
+			buildPhases = (
+				023049D228B4128C00D94130 /* Sources */,
+				023049D328B4128C00D94130 /* Frameworks */,
+				023049D428B4128C00D94130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				023049D828B4128C00D94130 /* PBXTargetDependency */,
+			);
+			name = StepCounterUITests;
+			productName = StepCounterUITests;
+			productReference = 023049D628B4128C00D94130 /* StepCounterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		023049B428B4128A00D94130 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					023049BB28B4128A00D94130 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					023049CB28B4128C00D94130 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 023049BB28B4128A00D94130;
+					};
+					023049D528B4128C00D94130 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 023049BB28B4128A00D94130;
+					};
+				};
+			};
+			buildConfigurationList = 023049B728B4128A00D94130 /* Build configuration list for PBXProject "StepCounter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 023049B328B4128A00D94130;
+			productRefGroup = 023049BD28B4128A00D94130 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				023049BB28B4128A00D94130 /* StepCounter */,
+				023049CB28B4128C00D94130 /* StepCounterTests */,
+				023049D528B4128C00D94130 /* StepCounterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		023049BA28B4128A00D94130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				023049C728B4128B00D94130 /* Preview Assets.xcassets in Resources */,
+				023049C428B4128B00D94130 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		023049CA28B4128C00D94130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		023049D428B4128C00D94130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		023049B828B4128A00D94130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0285F10A2905D99A0044070C /* SettingsView.swift in Sources */,
+				0285F11B290FB3750044070C /* SharedSettings.swift in Sources */,
+				023049C228B4128A00D94130 /* ContentView.swift in Sources */,
+				0285F10E2909C2780044070C /* WelcomeScreen.swift in Sources */,
+				0285F11D29102A600044070C /* SetGoalView.swift in Sources */,
+				0285F1102909C3330044070C /* CustomButton.swift in Sources */,
+				0285F118290F97C30044070C /* TintPickerView.swift in Sources */,
+				0285F114290C8C8C0044070C /* HealthStat.swift in Sources */,
+				0285F1062905D9470044070C /* MainView.swift in Sources */,
+				0207566028B43D2000F603A7 /* Ring.swift in Sources */,
+				0285F10C2909AE490044070C /* StatisticsView.swift in Sources */,
+				0285F112290AFB3E0044070C /* ChartCreator.swift in Sources */,
+				0285F116290CF19C0044070C /* SettingsRowView.swift in Sources */,
+				0285F0FD29043C290044070C /* HealthKitInteractor.swift in Sources */,
+				023049C028B4128A00D94130 /* StepCounterApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		023049C828B4128C00D94130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				023049D128B4128C00D94130 /* StepCounterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		023049D228B4128C00D94130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				023049DB28B4128C00D94130 /* StepCounterUITests.swift in Sources */,
+				023049DD28B4128C00D94130 /* StepCounterUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		023049CE28B4128C00D94130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 023049BB28B4128A00D94130 /* StepCounter */;
+			targetProxy = 023049CD28B4128C00D94130 /* PBXContainerItemProxy */;
+		};
+		023049D828B4128C00D94130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 023049BB28B4128A00D94130 /* StepCounter */;
+			targetProxy = 023049D728B4128C00D94130 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		023049DE28B4128C00D94130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		023049DF28B4128C00D94130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		023049E128B4128C00D94130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StepCounter/StepCounter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StepCounter/Preview Content\"";
+				DEVELOPMENT_TEAM = 7UHNX49SSD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Read step counta.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Read your current step count and track trends.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkozar.StepCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		023049E228B4128C00D94130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StepCounter/StepCounter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StepCounter/Preview Content\"";
+				DEVELOPMENT_TEAM = 7UHNX49SSD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Read step counta.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Read your current step count and track trends.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkozar.StepCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		023049E428B4128C00D94130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UHNX49SSD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkozar.StepCounterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StepCounter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StepCounter";
+			};
+			name = Debug;
+		};
+		023049E528B4128C00D94130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UHNX49SSD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkozar.StepCounterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StepCounter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StepCounter";
+			};
+			name = Release;
+		};
+		023049E728B4128C00D94130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UHNX49SSD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkozar.StepCounterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StepCounter;
+			};
+			name = Debug;
+		};
+		023049E828B4128C00D94130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UHNX49SSD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkozar.StepCounterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StepCounter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		023049B728B4128A00D94130 /* Build configuration list for PBXProject "StepCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				023049DE28B4128C00D94130 /* Debug */,
+				023049DF28B4128C00D94130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		023049E028B4128C00D94130 /* Build configuration list for PBXNativeTarget "StepCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				023049E128B4128C00D94130 /* Debug */,
+				023049E228B4128C00D94130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		023049E328B4128C00D94130 /* Build configuration list for PBXNativeTarget "StepCounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				023049E428B4128C00D94130 /* Debug */,
+				023049E528B4128C00D94130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		023049E628B4128C00D94130 /* Build configuration list for PBXNativeTarget "StepCounterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				023049E728B4128C00D94130 /* Debug */,
+				023049E828B4128C00D94130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 023049B428B4128A00D94130 /* Project object */;
+}
