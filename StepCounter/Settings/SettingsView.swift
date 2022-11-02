@@ -10,15 +10,17 @@ import SwiftUI
 struct SettingsView: View {
     @State private var showingTintColor = false
     
+    @State private var appearanceSettings = [
+        SettingsRowView(icon: SettingsIcon(icon: "paintpalette", backgroundColor: .blue), title: "Tint Color", viewToPresent: TintPickerView())
+    ]
+    
     var body: some View {
         NavigationView {
             List {
-                Section(header: Text("Important tasks")) {
-                    SettingsRowView(icon: "paintpalette", backgroundColor: Color.green, title: "LKLL")
-                }
-                .sheet(isPresented: $showingTintColor) {
-                    TintPickerView()
-                        .presentationDetents([.medium])
+                Section(header: Text("Appearance")) {
+                    ForEach(appearanceSettings, id: \.icon) { setting in
+                        setting
+                    }
                 }
             }
             .navigationTitle("Settings")

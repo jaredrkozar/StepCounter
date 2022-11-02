@@ -9,31 +9,46 @@ import SwiftUI
 
 struct SettingsRowView: View {
     
-    var icon: String
-    var backgroundColor: Color
+    var icon: SettingsIcon
     var title: String
-    var optionLabel: String?
+    var viewToPresent: (any View)?
+    
+    @State private var showingTintColor = false
     
     var body: some View {
         HStack {
-            ZStack {
-                RoundedRectangle(cornerRadius: 8, style: .circular)
-                    .fill(backgroundColor)
-                    
-                Image(systemName: icon).imageScale(.medium)
-                    .foregroundColor(Color.white)
-                
-            }.frame(width: 36, height: 36)
+            SettingsIcon(icon: icon.icon, backgroundColor: icon.backgroundColor)
             Text(title)
-            Spacer()
-            Text(optionLabel ?? "").foregroundColor(Color.gray)
+        }.onTapGesture {
+            showingTintColor.toggle()
+        }
+        .sheet(isPresented: $showingTintColor) {
+            TintPickerView()
+                .presentationDetents([.medium])
         }
         
     }
 }
 
+struct SettingsIcon: View, Hashable {
+    
+    var icon: String
+    var backgroundColor: Color
+    
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 8, style: .circular)
+                .fill(backgroundColor)
+                
+            Image(systemName: icon).imageScale(.medium)
+                .foregroundColor(Color.white)
+            
+        }.frame(width: 36, height: 36)
+    }
+}
+
 struct SettingsRowView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsRowView(icon: "pin", backgroundColor: Color.green, title: "KK", optionLabel: "nil")
+        SettingsRowView(icon: SettingsIcon(icon: "pin", backgroundColor: .blue), title: "Appearance", viewToPresent: nil)
     }
 }
